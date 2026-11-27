@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bargain Beacon — Real Black Friday deals, checked today</title>
+<meta name="description" content="Real Black Friday and Cyber Monday deals, each checked at its store on 27 Nov 2026, with an honest verdict on whether it is really a deal.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23ff5a3c'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#/"><span class="beacon" aria-hidden="true"></span>Bargain Beacon</a>
+    <p class="header-note">Black Friday 2026 · prices checked 27 Nov 2026</p>
+  </div>
+</header>
+<section class="hero wrap">
+  <h1>Real Black Friday deals. Checked today, verdict included.</h1>
+  <p class="lede">Every deal below was found and price-checked at its store on Black Friday itself, 27 November 2026. Each card shows the sale price, the usual price, the discount, when it was checked, and an honest verdict: a true low, a strong deal, a solid deal, or a modest cut.</p>
+  <p class="stats" id="stats"></p>
+</section>
+<section class="toolbar wrap" aria-label="Search and filter deals">
+  <label class="search-label">Search <input id="search" type="search" placeholder="Try “AirPods”, “TV” or “Dyson”"></label>
+  <label>Category <select id="filter-category"></select></label>
+  <label>Store <select id="filter-store"></select></label>
+  <label>At least <select id="filter-discount"><option value="0">Any discount</option><option value="25">25% off</option><option value="40">40% off</option><option value="50">50% off</option></select></label>
+  <label>Sort by <select id="sort"><option value="discount">Biggest discount</option><option value="saving">Biggest saving ($)</option><option value="price-low">Lowest price</option><option value="price-high">Highest price</option></select></label>
+  <p class="result-count" id="result-count" aria-live="polite"></p>
+</section>
+<main class="wrap" id="app"></main>
+<section class="method wrap">
+  <h2>How we check a deal</h2>
+  <ol>
+    <li><strong>Find it in a source that names the store.</strong> A deal comes from the store's own Black Friday release or a deals roundup that names the store and the price.</li>
+    <li><strong>Compare against the usual price.</strong> The discount on each card is worked out from the sale price and the usual price, so the maths always adds up.</li>
+    <li><strong>Say whether it is really a deal.</strong> 55% off or more is a true low, 40–54% a strong deal, 25–39% a solid deal, under 25% a modest cut. Small cuts are labelled small.</li>
+    <li><strong>Show the check time and the source.</strong> Every deal says when its price was read and where, and links out to the store. Prices move fast on Black Friday — check the live price before you buy.</li>
+  </ol>
+  <p>Sources used for this board: RedmondPie's Black Friday 2026 tech deals (27 Nov 2026), Best Buy's Black Friday sale release (17 Nov 2026), 9to5Toys' Best Buy sale list (18 Nov 2026), Yahoo Shopping's Black Friday roundup (22 Nov 2026), BeeBulletin's Black Friday deals (24 Nov 2026), ComicBook's Walmart early Black Friday deals, and Product Bible's Amazon Black Friday deals (19 Nov 2026).</p>
+</section>
+<footer class="wrap">
+  <p>Bargain Beacon is an independent deal board. It is not affiliated with Amazon, Best Buy, Walmart, Kate Spade, or any store named here. Store names are used only to say where a deal was found. All prices in US dollars, checked 27 Nov 2026, 06:50 UTC. Cyber Monday ends 30 Nov 2026.</p>
+</footer>
+</body>
+</html>
